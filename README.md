@@ -1,4 +1,5 @@
 # woodpecker框架Tomcat漏洞库
 
 ## 漏洞列表
-* Tomcat 弱口令破解
+* 弱口令爆破
+* CVE-2017-12615
