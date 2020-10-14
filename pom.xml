@@ -20,5 +20,11 @@
             <artifactId>requests</artifactId>
             <version>5.0.8</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.jrialland/ajpclient -->
+        <dependency>
+            <groupId>com.github.jrialland</groupId>
+            <artifactId>ajpclient</artifactId>
+            <version>1.11</version>
+        </dependency>
     </dependencies>
 </project>

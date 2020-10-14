@@ -7,6 +7,7 @@ import me.gv7.woodpecker.plugin.IPluginHelper;
 import me.gv7.woodpecker.vuldb.CVE_2017_12615.CVE_2017_12615_Plugin;
 import me.gv7.woodpecker.vuldb.CVE_2017_12615.exploit.CVE_2020_12615_UploadExploit;
 import me.gv7.woodpecker.vuldb.CVE_2017_12615.poc.CVE_2017_12615_Poc;
+import me.gv7.woodpecker.vuldb.CVE_2020_1938.poc.CVE_2020_1938_Poc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,9 +38,8 @@ public class CVE_2020_1938_Plugin implements IPlugin {
         callbacks.setVulDisclosureTime("2020-10");
         callbacks.setVulProduct("Tomcat");
 
-        callbacks.registerPoc(new CVE_2017_12615_Poc());
+        callbacks.registerPoc(new CVE_2020_1938_Poc());
         List<IExploit> exploitList = new ArrayList<IExploit>();
-        exploitList.add(new CVE_2020_12615_UploadExploit());
         callbacks.registerExploit(exploitList);
     }
 }
