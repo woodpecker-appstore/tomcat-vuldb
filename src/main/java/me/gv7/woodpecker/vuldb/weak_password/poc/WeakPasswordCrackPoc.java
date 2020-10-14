@@ -19,7 +19,7 @@ public class WeakPasswordCrackPoc implements IPoc {
 
         for(String username:user_array){
             for(String password:pass_array){
-                RawResponse response = Requests.get(vulURL).basicAuth(username, password).send();
+                RawResponse response = Requests.get(vulURL).basicAuth(username, password).verify(false).send();
                 if(response.getStatusCode() == 404){
                     String msg = String.format("%s is 404",vulURL);
                     scanResult.setExists(false);
