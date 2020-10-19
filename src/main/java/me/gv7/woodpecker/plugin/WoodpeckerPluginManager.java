@@ -6,8 +6,8 @@ import me.gv7.woodpecker.vuldb.weak_password.WeakPasswordCrackPlugin;
 
 public class WoodpeckerPluginManager implements IPluginManager {
     public void registerPluginManagerCallbacks(IPluginManagerCallbacks pluginManagerCallbacks) {
-        pluginManagerCallbacks.registerPlugin(new WeakPasswordCrackPlugin());
-        pluginManagerCallbacks.registerPlugin(new CVE_2017_12615_Plugin());
-        pluginManagerCallbacks.registerPlugin(new CVE_2020_1938_Plugin());
+        pluginManagerCallbacks.registerVulPlugin(new WeakPasswordCrackPlugin());
+        pluginManagerCallbacks.registerVulPlugin(new CVE_2017_12615_Plugin());
+        pluginManagerCallbacks.registerVulPlugin(new CVE_2020_1938_Plugin());
     }
 }

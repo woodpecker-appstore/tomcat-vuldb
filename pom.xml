@@ -9,11 +9,11 @@
     <version>0.1.0</version>
 
     <dependencies>
-        <dependency>
-            <groupId>me.gv7.woodpecker</groupId>
-            <artifactId>woodpecker-sdk</artifactId>
-            <version>0.1.0.beta1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>me.gv7.woodpecker</groupId>-->
+<!--            <artifactId>woodpecker-sdk</artifactId>-->
+<!--            <version>0.1.0.beta1</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>net.dongliu</groupId>
