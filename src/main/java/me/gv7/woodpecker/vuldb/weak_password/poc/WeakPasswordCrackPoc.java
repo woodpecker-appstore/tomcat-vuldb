@@ -23,7 +23,7 @@ public class WeakPasswordCrackPoc implements IPoc {
         basicAuthMap.put("root",new String[]{"root", "123456", "admin"});
     }
 
-    public IScanResult doCheck(ITarget target, IResultOutput iResultOutput) {
+    public IScanResult doVerify(ITarget target, IResultOutput iResultOutput) {
         IScanResult scanResult = WeakPasswordCrackPlugin.pluginHelper.createScanResult();
         String vulURL = target.getRootAddress() + "/manager/html";
 

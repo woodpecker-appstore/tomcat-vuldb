@@ -12,7 +12,7 @@ public class CVE_2020_1938_Poc implements IPoc {
     String[] apps = new String[]{"/","/docs/","/examples/","/host-manager/","/manager/"};
     String[] paths = new String[]{"favicon.ico","index.jsp","index.jspx","login.jsp","login.jspx"};
 
-    public IScanResult doCheck(ITarget target, IResultOutput iResultOutput) {
+    public IScanResult doVerify(ITarget target, IResultOutput iResultOutput) {
         IScanResult scanResult = CVE_2020_1938_Plugin.pluginHelper.createScanResult();
         String host = target.getHost();
         int port = target.getPort();

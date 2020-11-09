@@ -9,7 +9,7 @@ import net.dongliu.requests.RawResponse;
 import net.dongliu.requests.Requests;
 
 public class CVE_2017_12615_Poc implements IPoc {
-    public IScanResult doCheck(ITarget target, IResultOutput iResultOutput) {
+    public IScanResult doVerify(ITarget target, IResultOutput iResultOutput) {
         IScanResult scanResult = CVE_2017_12615_Plugin.pluginHelper.createScanResult();
         String strRandom = "xxxx";
         String vulURL = target.getRootAddress()+ String.format("%s.txt/",strRandom);
@@ -22,7 +22,7 @@ public class CVE_2017_12615_Poc implements IPoc {
         }
         String pocURL = target.getRootAddress() + String.format("%s.txt",strRandom);
         RawResponse response = Requests.get(pocURL).verify(false).send();
-        if(response.readToText().contains(strRandom)){
+        if(response.statusCode() == 200 && response.readToText().contains(strRandom)){
             String msg = String.format("/%s.txt be created",strRandom);
             scanResult.setExists(true);
             scanResult.setMsg(msg);

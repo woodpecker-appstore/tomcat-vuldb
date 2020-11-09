@@ -20,7 +20,7 @@ public class CVE_2020_1938_Plugin implements IVulPlugin {
         CVE_2020_1938_Plugin.pluginHelper = callbacks.getPluginHelper();
         // 设置插件信息
         callbacks.setVulPluginName("Tomcat CVE-2020-1938 plugin");
-        callbacks.setVulPluginVersion("0.1.0");
+        callbacks.setVulPluginVersion("0.1.1");
         callbacks.setVulPluginAuthor("c0ny1");
         // 设置漏洞信息
         callbacks.setVulName("Tomcat AJP LFI");

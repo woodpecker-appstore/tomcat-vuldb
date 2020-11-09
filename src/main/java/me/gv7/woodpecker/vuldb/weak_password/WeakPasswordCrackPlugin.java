@@ -14,7 +14,7 @@ public class WeakPasswordCrackPlugin implements IVulPlugin {
         WeakPasswordCrackPlugin.pluginHelper = callbacks.getPluginHelper();
         // 设置插件信息
         callbacks.setVulPluginName("Tomcat weak password crack plugin");
-        callbacks.setVulPluginVersion("0.1.0");
+        callbacks.setVulPluginVersion("0.1.1");
         callbacks.setVulPluginAuthor("c0ny1");
         // 设置漏洞信息
         callbacks.setVulName("Tomcat weark password");
