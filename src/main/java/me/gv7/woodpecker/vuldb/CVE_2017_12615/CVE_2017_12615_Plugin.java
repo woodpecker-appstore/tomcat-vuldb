@@ -19,8 +19,8 @@ public class CVE_2017_12615_Plugin implements IVulPlugin {
         CVE_2017_12615_Plugin.pluginHelper = callbacks.getPluginHelper();
         // 设置插件信息
         callbacks.setVulPluginName("Tomcat CVE-2017-12615 plugin");
-        callbacks.setVulPluginVersion("0.1.1");
-        callbacks.setVulPluginAuthor("c0ny1");
+        callbacks.setVulPluginVersion("0.2.0");
+        callbacks.setVulPluginAuthor("woodpecker-org");
         // 设置漏洞信息
         callbacks.setVulName("Tomcat put write file");
         callbacks.setVulId("CVE-2017-12615");

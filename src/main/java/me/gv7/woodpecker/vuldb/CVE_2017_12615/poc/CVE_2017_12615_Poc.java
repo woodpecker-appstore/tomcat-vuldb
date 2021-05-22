@@ -4,9 +4,9 @@ import me.gv7.woodpecker.plugin.IPoc;
 import me.gv7.woodpecker.plugin.IResultOutput;
 import me.gv7.woodpecker.plugin.IScanResult;
 import me.gv7.woodpecker.plugin.ITarget;
+import me.gv7.woodpecker.requests.RawResponse;
+import me.gv7.woodpecker.requests.Requests;
 import me.gv7.woodpecker.vuldb.CVE_2017_12615.CVE_2017_12615_Plugin;
-import net.dongliu.requests.RawResponse;
-import net.dongliu.requests.Requests;
 
 public class CVE_2017_12615_Poc implements IPoc {
     public IScanResult doVerify(ITarget target, IResultOutput iResultOutput) {

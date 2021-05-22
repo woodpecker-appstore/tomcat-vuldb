@@ -1,8 +1,6 @@
-import net.dongliu.requests.Proxies;
-import net.dongliu.requests.Requests;
-import sun.misc.BASE64Decoder;
 
-import java.io.IOException;
+import me.gv7.woodpecker.requests.Requests;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +19,6 @@ public class Test2 {
         headerMap.put("Content-Type","application/x-www-form-urlencoded");
         headerMap.put("Content-Length","0");
         String reqBody = "adsd=\"wwewe\"";
-        Requests.post(vulURL).body(reqBody).headers(headerMap).proxy(Proxies.httpProxy("127.0.0.1",9956)).verify(false).send();
+        Requests.post(vulURL).body(reqBody).headers(headerMap).send();
     }
 }

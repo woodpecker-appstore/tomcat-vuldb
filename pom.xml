@@ -12,13 +12,13 @@
         <dependency>
             <groupId>me.gv7.woodpecker</groupId>
             <artifactId>woodpecker-sdk</artifactId>
-            <version>0.1.0.beta4</version>
+            <version>0.3.0</version>
         </dependency>
 
         <dependency>
-            <groupId>net.dongliu</groupId>
-            <artifactId>requests</artifactId>
-            <version>5.0.8</version>
+            <groupId>me.gv7.woodpecker</groupId>
+            <artifactId>woodpecker-requests</artifactId>
+            <version>0.2.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.github.jrialland/ajpclient -->
         <dependency>

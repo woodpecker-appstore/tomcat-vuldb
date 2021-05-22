@@ -4,9 +4,9 @@ import me.gv7.woodpecker.plugin.IPoc;
 import me.gv7.woodpecker.plugin.IResultOutput;
 import me.gv7.woodpecker.plugin.IScanResult;
 import me.gv7.woodpecker.plugin.ITarget;
+import me.gv7.woodpecker.requests.RawResponse;
+import me.gv7.woodpecker.requests.Requests;
 import me.gv7.woodpecker.vuldb.weak_password.WeakPasswordCrackPlugin;
-import net.dongliu.requests.RawResponse;
-import net.dongliu.requests.Requests;
 
 import java.util.HashMap;
 import java.util.Map;
