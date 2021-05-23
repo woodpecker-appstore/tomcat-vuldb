@@ -19,11 +19,7 @@
         <dependency>
             <groupId>me.gv7.woodpecker</groupId>
             <artifactId>woodpecker-sdk</artifactId>
-<<<<<<< HEAD
             <version>0.3.0</version>
-=======
-            <version>0.1.0</version>
->>>>>>> 7db47a7052f1a4df9a183bf687332ebe0c692d92
         </dependency>
 
         <dependency>
