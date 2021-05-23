@@ -8,11 +8,22 @@
     <artifactId>tomcat-vuldb</artifactId>
     <version>0.1.1</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.release>8</maven.compiler.release>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>me.gv7.woodpecker</groupId>
             <artifactId>woodpecker-sdk</artifactId>
+<<<<<<< HEAD
             <version>0.3.0</version>
+=======
+            <version>0.1.0</version>
+>>>>>>> 7db47a7052f1a4df9a183bf687332ebe0c692d92
         </dependency>
 
         <dependency>
@@ -27,4 +38,27 @@
             <version>1.11</version>
         </dependency>
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
